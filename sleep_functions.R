@@ -1,4 +1,4 @@
-# read.ag = MOCA function used to read and clean Actigraph data
+# read.ag = MOCA function used to read and clean Actigraph data (alternative to read_ag in MOCAfunctions)
 read.ag = function(filepath, ENMO_calibrate = F, calibration_file = F){
   
   check_data = fread(filepath,header = T,skip = 10, nrows = 1)[1,]
